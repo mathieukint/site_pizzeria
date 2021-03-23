@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+
+        <meta author="Mathieu Kint">
+        <meta charset="utf-8">
+        <meta name="language" content="fr">
+
+        <title>Pizzeria</title>
+        <link rel="icon" href="https://www.mpa-pro.fr/resize/360x360/zc/3/f/0/src/sites/mpapro/files/products/d11527.png">
+        
+        <script type="text/javascript" src="scripts/contact.js"></script>
+        <link rel="stylesheet" href="styles/contact.css">
+    
+    </head>
+
+    <body>
+        <h1>La Florentina</h1>
+
+        <nav id="menu">
+            <fieldset>
+                <legend id="h2">Pizzeria</legend>
+                    
+                <table>
+                    
+                    <tr>
+                        <td id="navlink">
+                            <ul>
+                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="liste_pizzas.html">Nos pizzas</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </td>
+                        <td id="pageactuelle">Contact</td>
+                    </tr>
+
+            </table>
+
+            </fieldset>
+        </nav>
+
+        <main>
+
+            <fieldset id="bordForm">
+                
+                <legend id="h2">Formulaire de contact</legend>
+
+                <form id="myForm" onsubmit="return validateForm();"> <!--action="/send" method="POST">-->
+
+                    <div>
+
+                        <fieldset>
+
+                            <legend> A propos de vous </legend>
+
+                            <label for="prenom_personne">Prénom</label>
+                            <input type="texte" name="prenom" id="prenom_personne">
+                            <span id="prenom_Error"></span><br>
+
+                            <label for="nom_personne">Nom</label>
+                            <input type="texte" name="nom" id="nom_personne">
+                            <span id="nom_Error"></span><br>
+
+                            <label for="age_personne">Age</label>
+                            <input type="number" name="age" id="age_personne" value= blanck min="0" max="120">
+                            <span id="age_Error"></span><br>
+
+                        </fieldset>
+
+                        <fieldset>
+                            <legend> Vos coordonnées </legend>
+                            <label for="mail_personne">Adresse mail</label>
+                            <input type="text" name="mail" id="mail_personne">
+                            <span id="mail_Error"></span><br>
+                            
+                            <label for="tel_personne">Téléphone</label>
+                            <input type="tel" name="tel" id="tel_personne">
+                            <span id="tel_Error"></span><br>
+
+                            <label for="canfav_personne">Canal de contact favori</label>
+                            <select name="canfav" id="canfav_personne" value=blanck>
+                                <option value="">--Choisir une option--</option>
+                                <option value="mail">Mail</option>
+                                <option value="phone">Téléphone</option>
+                            </select>
+                            <span id="canfav_Error"></span><br>
+                        </fieldset>
+
+                        <fieldset>
+
+                            <legend> Votre message </legend><br>
+                            <textarea id="message_personne" rows="5" cols="32" maxlength ="200" ></textarea>
+                            <span id="message_Error"></span><br>
+                        
+                        </fieldset>
+
+                    </div><br>
+
+                    <div>
+                        <input type="submit" value="Valider">
+                        <!--<button type="submit">Valider</button>-->
+                        <input type="reset" value="Annuler" />
+                    </div>
+
+                </form>
+
+            </fieldset>
+
+        </main>    
+
+    </body>
+    
+</html>
