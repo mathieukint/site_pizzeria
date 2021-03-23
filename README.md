@@ -1,2 +1,4 @@
 # site_pizzeria
-TP réalisé dans le cadre de formation JS FullStack à Diginamic
+Site internet d'une pizzeria réalisé à Diginamic Montpellier
+
+Les cas d'erreurs du formulaire sont gérés par un script JS.
